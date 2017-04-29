@@ -1,0 +1,334 @@
+@font-face {
+  font-family: 'iconfontyyy';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfontyyy') format('svg');
+}
+.iconfontyyy {
+  font-family: "iconfontyyy" !important;
+  font-size: 1rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.headerTopNav {
+  width: 100%;
+  height: 80px;
+  margin-top: 1%;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.headerTopNav img {
+  position: absolute;
+  left: 25%;
+  top: 2%;
+  margin-left: -140px;
+  width: 140px;
+  height: 64px;
+}
+.headerTopNav > ul {
+  width: 60%;
+  padding: 1% 0% 1% 0%;
+  float: right;
+}
+.headerTopNav > ul > li {
+  list-style: none;
+  float: left;
+  line-height: 45px;
+  cursor: pointer;
+}
+.headerTopNav > ul span {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+}
+.headerTopNav > ul > li:not(:first-of-type) {
+  margin-left: 5%;
+}
+.minScreenMenu {
+  display: none;
+  width: 80%;
+}
+.MainSection {
+  margin-top: 2%;
+}
+.MainSection > .imgMain {
+  width: 100%;
+  position: relative;
+}
+.MainSection > .imgMain > img {
+  width: 100%;
+}
+.MainSection > .imgMain > .WhiteHr {
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+.MainSection > .imgMain > .introduceWord {
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+}
+.MainSection > .imgMain > .introduceWord button {
+  width: 100px;
+  border: none;
+  outline: none;
+}
+.saleTips {
+  width: 100%;
+  height: 105px;
+  margin-top: 10px;
+  padding: 5px 0px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+.saleTips p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.SpringClothes {
+  padding-top: 2%;
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.SpringClothes h2 {
+  color: #ccc;
+  letter-spacing: 1px;
+}
+.SpringClothes div:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.SpringClothes div img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.SpringClothes div span {
+  color: #ccc;
+  display: block;
+}
+.SpringClothes div a {
+  color: black;
+  text-decoration: underline;
+}
+.GiGiColumn {
+  padding: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.GiGiColumn div {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.GiGiColumn div img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.GiGiColumn div:first-of-type > section {
+  width: 80%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  margin-left: -40%;
+  box-sizing: border-box;
+}
+.GiGiColumn div:first-of-type > section p {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.GiGiColumn div:first-of-type > section h1 {
+  padding: 0;
+  margin: 2% 0;
+}
+.GiGiColumn div:first-of-type > section button {
+  border: none;
+  outline: none;
+}
+.GiGiColumn div:nth-of-type(2) > section {
+  width: 80%;
+  height: 90%;
+  color: black;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  padding: 0% 0%;
+  box-sizing: border-box;
+}
+.GiGiColumn div:nth-of-type(2) > section p {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.GiGiColumn div:nth-of-type(2) > section h1 {
+  padding: 0;
+  padding: 38% 0%;
+}
+.GiGiColumn div:nth-of-type(2) > section p:first-of-type {
+  font-size: 20px;
+}
+.GiGiColumn div:nth-of-type(3) > section {
+  width: 70%;
+  height: 30%;
+  position: absolute;
+  bottom: 15%;
+  left: 13%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+}
+.GiGiColumn div:nth-of-type(3) > section p:first-of-type {
+  padding: 5% 0px;
+}
+.GiGiColumn div:nth-of-type(3) > section a {
+  color: black;
+  text-decoration: underline;
+}
+.GiGiColumn div:nth-of-type(4) {
+  padding-top: 15%;
+}
+.GiGiColumn div:nth-of-type(5) > section,
+.GiGiColumn div:nth-of-type(6) > section,
+.GiGiColumn div:nth-of-type(7) > section {
+  width: 70%;
+  height: 30%;
+  position: absolute;
+  bottom: 30%;
+  left: 18%;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+.GiGiColumn div:nth-of-type(5) > section a,
+.GiGiColumn div:nth-of-type(6) > section a,
+.GiGiColumn div:nth-of-type(7) > section a {
+  color: black;
+  text-decoration: underline;
+}
+.GiGiColumn div:nth-of-type(5) > section button,
+.GiGiColumn div:nth-of-type(6) > section button,
+.GiGiColumn div:nth-of-type(7) > section button {
+  width: 100px;
+}
+.GiGiColumn div:first-of-type,
+.GiGiColumn div:nth-of-type(3),
+.GiGiColumn div:nth-of-type(6) {
+  padding-left: 0;
+}
+.GiGiColumn div:nth-of-type(8) {
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+}
+.GiGiColumn div:nth-of-type(8) section {
+  width: 100%;
+  height: 60%;
+  padding: 10% 5%;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.GiGiColumn div:nth-of-type(8) button {
+  border: none;
+  outline: line;
+  margin: 2% 0%;
+  width: 100px;
+}
+.GiGiColumn div:nth-of-type(2),
+.GiGiColumn div:nth-of-type(5),
+.GiGiColumn div:nth-of-type(7) {
+  padding-right: 0;
+}
+.bottomClass {
+  background-color: #2b2b2b;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 3% 0%;
+}
+.bottomClass div p {
+  margin: 10px 0px;
+}
+.bottomClass div img {
+  margin: 10px 0px;
+}
+.footer {
+  background-color: black;
+}
+.footer section > p {
+  text-align: center;
+}
+.footer section > ul {
+  padding: 5% 0%;
+  list-style: none;
+  float: left;
+}
+.footer section > ul > li:first-of-type {
+  color: white;
+  font-size: 20px;
+}
+.footer section > ul > li {
+  margin-bottom: 3px;
+}
+.footer section > ul > li > button {
+  margin-top: 2px;
+  border: 0;
+  outline: 0;
+}
+.footer section > ul:not(:last-of-type) {
+  margin-right: 10%;
+}
+@media screen and (max-width: 983px) {
+  .headerTopNav img {
+    left: 5%;
+    margin-left: 0;
+  }
+  .headerTopNav ul > li {
+    display: none;
+  }
+  .headerTopNav ul > span {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .GiGiColumn div:nth-of-type(2) > section p {
+    font-size: 12px;
+  }
+  .GiGiColumn div:nth-of-type(2) > section h1 {
+    font-size: 20px;
+  }
+  .GiGiColumn div:nth-of-type(2) > section p:first-of-type {
+    font-size: 13px;
+  }
+  .GiGiColumn div:nth-of-type(4) {
+    display: none;
+  }
+}

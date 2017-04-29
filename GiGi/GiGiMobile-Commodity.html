@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GiGi</title>
+	 <link rel="shortcut icon" href="./images/titlelogo.png"/>
+    <meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<script>
+
+	    // if(!(/iPhone|Android/i.test(navigator.userAgent))){
+     //          location.href='GiGiPc.html';
+     //       }
+
+		var myScale = 1;
+
+		myScale = myScale/window.devicePixelRatio;
+
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+myScale+',minimum-scale='+myScale+',maximum-scale='+myScale+',user-scalable=no" />');
+
+		var autoRem = document.documentElement.clientWidth/20;
+
+		document.getElementsByTagName('html')[0].style.fontSize = autoRem + 'px';
+	</script>
+	<link rel="stylesheet" href="./css/GiGiMobile-Commodity.css">
+</head>
+<body>
+
+<div class="container">
+	<header class="header">
+		<span class="iconfontyyy">&#xe607;</span>
+		<span><img src="./images/logo56.png" alt=""></span>
+		<span class="iconfontyyy">&#xe62b;</span>
+	</header>
+     
+     <div class="CommodityShow">
+     	<section class="ShowBox">
+     		<img src="./images/ComShow-1.jpg" alt="">
+     		<img src="./images/ComShow-2.jpg" alt="">
+     		<img src="./images/ComShow-3.jpg" alt="">
+     		<img src="./images/ComShow-1.jpg" alt="">
+     	</section>
+     	<nav id="imgIcon">
+			<a href="javascript:;" class="active"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+		</nav>
+     </div>
+
+     <div class="CommdityTitle">
+     	<p>MO&Co. Galaxy 97</p>
+     	<span>$999</span><del>$2999</del>
+     	<p>All MO&Co. are Sale More <span class="iconfontyyy">&#xe600;</span></p>
+     </div>
+
+     <div class="Aquestion">
+        <p><span>Write Commend</span> <span>Problem</span></p>
+     	<p><span class="iconfontyyy">&#xe699;</span>How to clean is better?</p>
+     	<p><span class="iconfontyyy">&#xe733;</span>Use water is very better</p>
+     	<p><span class="iconfontyyy">&#xe699;</span>Pool guy can buy this goods?</p>
+     	<p><span class="iconfontyyy">&#xe733;</span>We hopo pool guy don't show in our shop</p>
+     	<p>More<span class="iconfontyyy">&#xe601;</span></p>
+     </div>
+
+     <div class="detalist">
+     	<img src="./images/ComShow-1.jpg" alt="">
+     	<img src="./images/ComShow-2.jpg" alt="">
+     	<img src="./images/ComShow-3.jpg" alt="">
+     </div>
+
+<div class="backToTop">
+     	<p>Back To Top <span class="iconfontyyy">&#xe602;</span></p>
+ </div>
+	<footer class="footer">
+		 <span class="iconfontyyy">&#xe635;</span>
+		 <span>Shopping Cart</span>
+		 <span class="iconfontyyy collect">&#xe649;</span>
+	</footer>
+</div>
+
+<script>
+
+	window.onresize = function() {
+		
+		var myScale = 1;
+
+		myScale = myScale/window.devicePixelRatio;
+
+		if(document.documentElement.clientHeight < 1000){
+			
+		var autoRem = document.documentElement.clientWidth/40;
+
+		document.getElementsByTagName('html')[0].style.fontSize = autoRem + 'px';
+		
+		}else{
+
+		var autoRem = document.documentElement.clientWidth/20;
+
+		document.getElementsByTagName('html')[0].style.fontSize = autoRem + 'px';
+			
+		}
+
+	}
+   
+   var backTop = document.getElementsByClassName('backToTop')[0];
+   
+   backTop.addEventListener('touchend',backtop);
+
+   function backtop() {
+
+       document.body.scrollTop = '0px';
+
+   }
+
+
+   var collect = document.querySelector('.collect');
+
+   var CollectColor = 0;
+   collect.addEventListener('touchend',Collect);
+
+   function Collect() {
+      if(!CollectColor){
+      collect.style.color = "red";
+      CollectColor =1;
+      }else{
+      collect.style.color = "#ccc";
+      CollectColor = 0;
+      }
+
+   }
+
+
+   var CommodityWidth = document.getElementsByClassName('CommodityShow')[0].clientWidth;
+   
+   var slideBox = document.getElementsByClassName('ShowBox')[0];
+
+   var imgIcon = document.getElementById('imgIcon').getElementsByTagName('a');
+
+   var posX  = 0;
+
+   var slideImgLeft = 0;
+
+
+        slideBox.addEventListener('touchstart',start);
+        slideBox.addEventListener('touchmove',move);         
+        slideBox.addEventListener('touchend',end);
+
+        function start(ev) {
+        	var e = ev.changedTouches[0];
+        	posX = e.pageX;
+
+        	slideBox.style.transition = 'none';
+
+        	slideImgLeft = this.offsetLeft;
+
+            for(var i = 0;i<imgIcon.length;i++){
+            	imgIcon[i].removeAttribute('class');
+            }
+
+        }
+
+        function move(ev) {
+        	var e = ev.changedTouches[0];
+        	slideBox.style.left = (e.pageX - posX) + slideImgLeft + 'px';
+        }
+
+        function end(ev) {
+        	if(slideBox.offsetLeft>0){
+        		var num = 0;
+        	}else if((-slideBox.offsetLeft)>CommodityWidth*3){
+        		var num = -3;
+        	}else{
+
+        	    var num = Math.round(slideBox.offsetLeft/CommodityWidth);
+              
+
+
+        	}
+        	slideBox.style.transition = '.5s';
+
+        	slideBox.style.left = num * CommodityWidth + 'px';
+
+        	num1 = Math.abs(num);
+
+        	imgIcon[num1].setAttribute('class','active');
+
+        }
+
+
+
+
+</script>
+</body>
+</html>

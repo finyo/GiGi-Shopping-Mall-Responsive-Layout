@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GiGi</title>
+	 <link rel="shortcut icon" href="./images/titlelogo.png"/>
+    <meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<script>
+        
+        if(!(/iPhone|Android/i.test(navigator.userAgent))){
+              location.href='GiGiPc.html';
+           }
+		var myScale = 1;
+
+		myScale = myScale/window.devicePixelRatio;
+
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+myScale+',minimum-scale='+myScale+',maximum-scale='+myScale+',user-scalable=no" />');
+
+		var autoRem = document.documentElement.clientWidth/20;
+
+		document.getElementsByTagName('html')[0].style.fontSize = autoRem + 'px';
+	</script>
+	<link rel="stylesheet" href="./css/mobile-Search.css">
+</head>
+<body>
+
+<div class="container">
+	<header class="header">
+		<span class="iconfontyyy">&#xe607;</span>
+		<span><img src="./images/logo56.png" alt=""></span>
+		<span class="iconfontyyy">&#xe62b;</span>
+	</header>
+
+	<div class="searchSection">
+		<div><input type="search" placeholder="Please enter you want"></div>
+		<span class="iconfontyyy">&#xe614;</span>
+	</div>
+	<div class="recommendSection">
+		<p>Maybe you like these</p>
+		<section>
+			<div>
+				<img src="./images/pop1.jpg" alt="">
+				<p>keios under</p>
+				<span>¥400.00</span>
+				<span class="iconfontyyy new">&#xe61a;</span>
+			</div>
+			<div>
+				<img src="./images/pop2.jpg" alt="">
+				<p>PHANTACi X PUMA</p>
+				<span>¥99.00</span>
+				<del>¥359</del>
+			</div>
+			<div>
+				<img src="./images/pop3.jpg" alt="">
+				<p>converse Ch Taylo</p>
+				<span>¥59.00</span>
+				<del>¥199</del>
+			</div>
+			<div>
+				<img src="./images/pop4.jpg" alt="">
+				<p>Keds × Minnie Mouse</p>
+				<span>¥129.00</span>
+				<span class="iconfontyyy hot">&#xe661;</span>
+			</div>
+			<div>
+				<img src="./images/pop5.jpg" alt="">
+				<p>CH Minnie White XX</p>
+				<span>¥800.00</span>
+				<span class="iconfontyyy new">&#xe61a;</span>
+			</div>
+			<div>
+				<img src="./images/pop6.jpg" alt="">
+				<p>KI KUENS less P</p>
+				<span>¥2999.00</span>
+				<span class="iconfontyyy new">&#xe61a;</span>
+			</div>
+			<div>
+				<img src="./images/pop7.jpg" alt="">
+				<p>CHANEL 2017 Ho</p>
+				<span>¥599.00</span>
+				<del>¥3999</del>
+			</div>
+			<div>
+				<img src="./images/pop8.jpg" alt="">
+				<p>KIHF KDA 126</p>
+				<span>¥999.00</span>
+				<span class="iconfontyyy hot">&#xe661;</span>
+			</div>
+			<div>
+				<img src="./images/pop9.jpg" alt="">
+				<p>YSL VIP XTO</p>
+				<span>¥199.00</span>
+				<span class="iconfontyyy new">&#xe61a;</span>
+			</div>
+			<div>
+				<img src="./images/pop10.jpg" alt="">
+				<p>CH Minnie KOIN</p>
+				<span>¥169.00</span>
+				<del>¥859</del>
+			</div>
+		</section>
+	</div>
+	
+ <div class="backToTop">
+     	<p>Back To Top <span class="iconfontyyy">&#xe602;</span></p>
+ </div>
+	<footer class="footer">
+		 <span class="iconfontyyy">&#xe608;<p>Home</p></span>
+		 <span class="iconfontyyy">&#xe612;<p>Class</p></span>
+		 <span class="iconfontyyy">&#xe60c;<p>Nice</p></span>
+		 <span class="iconfontyyy">&#xe626;<p>Shop</p></span>
+		 <span class="iconfontyyy">&#xe603;<p>Personl</p></span>
+	</footer>
+</div>
+
+<script>
+
+	window.onresize = function() {
+		
+		var myScale = 1;
+
+		myScale = myScale/window.devicePixelRatio;
+
+		if(document.documentElement.clientHeight < 1000){
+			
+		var autoRem = document.documentElement.clientWidth/40;
+
+		document.getElementsByTagName('html')[0].style.fontSize = autoRem + 'px';
+		
+		}else{
+
+			var autoRem = document.documentElement.clientWidth/20;
+
+		document.getElementsByTagName('html')[0].style.fontSize = autoRem + 'px';
+			
+		}
+
+	}
+</script>
+</body>
+</html>

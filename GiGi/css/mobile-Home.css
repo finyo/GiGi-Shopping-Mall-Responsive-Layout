@@ -1,0 +1,330 @@
+
+/*mobile CSS*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face {font-family: 'iconfontyyy';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfontyyy') format('svg');
+}
+
+.iconfontyyy{
+    font-family:"iconfontyyy" !important;
+    font-size:1rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+html{
+    font-size:40px;
+    width: 100%;
+    height: 100%;
+
+}
+body{
+    width: 100%;
+    height:100%;
+}
+
+.container{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    height:3rem;
+    background-color:rgb(56,56,56);
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:88;
+}
+.header span{
+    padding:0.4rem 1rem;
+    align-self:center;
+}
+.header img{
+    margin-top:0.4rem;
+    width:3rem;
+    height:100%;
+}
+.CommodityShow{
+    display:block;
+    height:10rem;
+    width:100%;
+    margin-top:3rem;
+    overflow:hidden;
+    position: relative;
+}
+.ShowBox{
+    width:400%;
+    height:10rem;
+    display:block;
+    position: absolute;
+}
+.ShowBox img{
+    width:25%;
+    height:100%;
+    float:left;
+}
+#imgIcon{
+   width: 3.4rem;
+  height: 1rem;
+  line-height: 0.8rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0.8rem;
+  left: 50%;
+  margin-left: -1.7rem;
+  text-align: center;
+}
+#imgIcon>a{
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #fff;
+  border-radius: 50%;
+}
+#imgIcon>a.active{
+  background:rgba(0, 0, 0, 0.7);
+}
+.menuList{
+    width:100%;
+    height:5rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.menuList>div{
+    box-sizing:border-box;
+    width:3.5rem;
+    height:3.5rem;
+    border-radius:50%;
+    border:0.05rem solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.menuList>div>span{
+   text-align:center;
+}
+.menuList>div>span>p{
+   text-align:center;
+   font-size:0.5rem;
+}
+.mainImg-1{
+    background-color:#efefef;
+    width:100%;
+    height:10rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    box-shadow:0px 0.01rem 10px black;
+    position: relative;
+    font-size:1.2rem;
+    font-family:FangSong;
+}
+.mainImg-1>img{
+    width:100%;
+    height:10rem;
+}
+.mainImg-1>div{
+    display:block;
+    width: 80%;
+    height: 3rem;
+    background-color:rgba(0,0,0,0.9);
+    position:absolute;
+    bottom: 0;
+    left:10%;
+    color:white;
+    text-align: center;
+    line-height:3rem;
+    letter-spacing:0.1rem;
+}
+.popClass{
+   display:flex;
+   flex-direction:column;
+   margin-top:2rem;
+}
+.popClass>p{
+    text-align: center;
+}
+.popClass>section{
+ margin-top:2rem;
+ box-shadow:0px 0.01rem 10px black;
+
+}
+.popClass>section>div{
+    box-sizing:border-box;
+    float: left;
+    width: 25%;
+    height: 6rem;
+    border-right:0.05rem solid #ccc;
+    border-bottom:0.05rem solid #ccc;
+}
+.popClass>section>div>img{
+    width: 100%;
+    height:100%;
+}
+.gigiShow{
+    width: 100%;
+    box-sizing:border-box;
+    padding:0rem 0.1rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+.gigiShow>p{
+    text-align: center;
+    margin-bottom:2rem;
+}
+.gigiShow>div{
+    width: 50%;
+    height: 5.5rem;
+    float: left;
+    box-sizing:border-box;
+    padding:0.05rem 0.1rem;
+    position: relative;
+}
+.gigiShow>div>img{
+    width:100%;
+    height:100%;
+    border-radius:10%;
+
+}
+.gigiShow>div>img+div{
+    color:white;
+    text-align: center;
+    background-color:rgba(0,0,0,.8);
+    width:50%;
+    height:3rem;
+    display:block;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-25%;
+    margin-top:-1.5rem;
+    line-height:1.5rem;
+    letter-spacing:0.08rem;
+    font-size:0.8rem;
+}
+
+.gigiShow>div>img+div>p{
+    font-size:0.5rem;
+}
+.bottomClass{
+    display:flex;
+    flex-direction:column;
+}
+.bottomClass>div{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:2rem;
+}
+
+.bottomClass>div>span{
+   width:4rem;
+}
+
+.bottomClass>section>div{
+    box-sizing:border-box;
+    width: 50%;
+    float: left;
+    display:flex;
+    height:5rem;
+    border-bottom:0.05rem solid #ccc;
+    padding:0rem 0.5rem;
+    line-height:5rem;
+    font-size:1rem;
+    overflow: hidden;
+}
+.bottomClass>section>div>span{
+    flex:3;
+}
+.bottomClass>section>div:nth-of-type(even){
+    border-left:0.05rem solid #ccc;
+}
+.bottomClass>section>div>img{
+  flex:2;
+  height:4rem;
+  overflow:hidden;
+  align-self:center;
+  margin-right:1rem;
+}
+.clothesList{
+    width:100%;
+    overflow-x:auto;
+    height: 9rem;
+}
+.clothesList>section{
+    width:168%;
+    height:100%;
+}
+.clothesList>section>div{
+    box-sizing:border-box;
+    float: left;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    font-size:0.5rem;
+    width:20%;
+    height:100%;
+    padding:0rem 0.5rem;
+    overflow: hidden;
+}
+.clothesList>section>div>img{
+    width:100%;
+    height: 7rem;
+}
+.clothesList>section>div>span{
+    margin:0.3rem 0rem;
+}
+.clothesList>section>div>p{
+    color:#ccc;
+    font-size:0.5rem;
+}
+.backToTop{
+    margin:2rem 0rem;
+    height:4rem;
+}
+.backToTop>p{
+    text-align: center;
+}
+.footer{
+    border-top:0.05rem solid #ccc;
+    background-color:#fff;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer>span{
+    font-size:1rem;
+    text-align: center;
+    color:#ccc;
+}
+.footer>span:first-of-type{
+    color:black;
+}
+.footer>span>p{
+    font-size:0.5rem;
+    text-align: center;
+}
+
+
